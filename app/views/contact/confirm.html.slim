@@ -86,6 +86,14 @@ br
         td
           strong.label 必須
         td.arrow_box
+          | 葬儀の種類
+        td
+          = f.hidden_field :select
+          = @contact.select
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
           | 導入時期
         td
           = f.hidden_field :period

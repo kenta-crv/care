@@ -12,6 +12,7 @@ class CreateContacts < ActiveRecord::Migration[5.2]
       t.string :town #URL
       t.string :worries #悩みbuild
       t.string :importance #面積area
+      t.string :select #面積area
       t.string :period #時期
       t.string :remarks #相談内容
       t.timestamps

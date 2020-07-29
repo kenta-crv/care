@@ -10,6 +10,7 @@ validates :prefecture, {presence: true} #都道府県
 validates :city, {presence: true} #市区町村
 validates :town, {presence: true} #URL
 validates :importance, {presence: true} #面積
+validates :select, {presence: true} #面積
 validates :period, {presence: true} #解体時期
 validates :remarks, {presence: true} #解体時期
 end

@@ -33,6 +33,7 @@ class ContactController < ApplicationController
       :town,
       :worries,
       :importance,
+      :select,
       :period,
       :remarks
     )

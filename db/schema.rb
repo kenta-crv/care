@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2020_05_16_080201) do
     t.string "town"
     t.string "worries"
     t.string "importance"
+    t.string "select"
     t.string "period"
     t.string "remarks"
     t.datetime "created_at", null: false
