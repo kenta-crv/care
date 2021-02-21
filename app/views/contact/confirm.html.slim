@@ -36,7 +36,7 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 電話番号
+          | 携帯番号
         td
           = f.hidden_field :tel
           = @contact.tel
@@ -52,27 +52,34 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 都道府県
+          | 住所
         td
-          = f.hidden_field :prefecture
-          = @contact.prefecture
-          | 県
+          = f.hidden_field :address
+          = @contact.address
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 市町村
+          | 年齢
         td
-          = f.hidden_field :city
-          = @contact.city
+          = f.hidden_field :ago
+          = @contact.ago
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 番地以降
+          | 今働いている会社名
         td
-          = f.hidden_field :town
-          = @contact.town
+          = f.hidden_field :company
+          = @contact.company
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 現在の給与
+        td
+          = f.hidden_field :saraly
+          = @contact.saraly
       tr
         td
           strong.label 必須
@@ -81,20 +88,11 @@ br
         td
           = f.hidden_field :importance
           = @contact.importance
-          | 坪
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 葬儀の種類
-        td
-          = f.hidden_field :select
-          = @contact.select
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 導入時期
+          | 転職希望時期
         td
           = f.hidden_field :period
           = @contact.period
@@ -102,7 +100,24 @@ br
         td
           strong.label 必須
         td.arrow_box
-          | 相談本文
+          | 転職希望エリア（※広めに記載）
+        td
+          = f.hidden_field :next_address
+          = @contact.next_address
+
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 取得している資格
+        td
+          = f.hidden_field :qualificartion
+          = @contact.qualificartion
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 相談内容・その他
         td
           = f.hidden_field :remarks
           = @contact.remarks

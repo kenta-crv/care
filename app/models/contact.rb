@@ -6,11 +6,12 @@ validates :first_kana, {presence: true}  #ミョウジ
 validates :last_kana, {presence: true}  #ナマエ
 validates :tel, {presence: true} #電話番号
 validates :email, {presence: true} #メールアドレス
-validates :prefecture, {presence: true} #都道府県
-validates :city, {presence: true} #市区町村
-validates :town, {presence: true} #URL
+validates :address, {presence: true} #都道府県
+validates :ago, {presence: true} #市区町村
+validates :saraly, {presence: true} #URL
 validates :importance, {presence: true} #面積
-validates :select, {presence: true} #面積
 validates :period, {presence: true} #解体時期
+validates :next_address, {presence: true} #面積
+validates :qualificartion, {presence: true} #面積
 validates :remarks, {presence: true} #解体時期
 end

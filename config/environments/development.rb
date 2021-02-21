@@ -8,8 +8,8 @@ Rails.application.configure do
   address: 'smtp3.gmoserver.jp',
   domain: 'comicomi.cc',
   port: 587,
-  user_name: 'info@comicomi.cc',
-  password: 'BpX8$0Xu',
+  user_name: 'mail@comicomi.cc',
+  password: '5F&LX5WE',
   authentication: 'plain',
   enable_starttls_auto: true
   }

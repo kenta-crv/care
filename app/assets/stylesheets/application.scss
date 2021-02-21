@@ -14,9 +14,9 @@
  *= require_self
  */
 
- $main_color: #8D9093;
+ $main_color: #327BEE;
  $sub_color: #ABADAF;
- $asort_color: #8D9093;
+ $asort_color: #2C5DD8;
 
 body {
   width:100%;
@@ -127,7 +127,7 @@ main {
  .back-image-index {
    text-align:center;
    .index-3 {
-       font-size:4.0vw;
+       font-size:3.5vw;
        font-weight:bold;
        line-height:7vw;
        color:$asort_color;

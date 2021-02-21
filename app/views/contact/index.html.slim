@@ -39,7 +39,7 @@
         td
           strong.label 必須
         td.arrow_box
-          | 電話番号
+          | 携帯番号
         td
           = f.text_field :tel
       tr
@@ -53,24 +53,30 @@
         td
           strong.label 必須
         td.arrow_box
-          | 都道府県
+          | 住所
         td
-          = f.text_field :prefecture
-          |県
+          = f.text_field :address
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 市区町村
+          | 年齢
         td
-          = f.text_field :city
+          = f.text_field :ago
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 番地以降
+          | 今働いている会社名
         td
-          = f.text_field :town
+          = f.text_field :company
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 現在の給与
+        td
+          = f.number_field :saraly
       tr
         td
           strong.label 必須
@@ -79,34 +85,20 @@
         td
           = f.select(:importance,[\
             ["選択してください","選択してください"],\
-            ["親身な対応","親身な対応"],\
-            ["費用面","費用面"],\
-            ["実績がある","実績がある"],
+            ["給料を上げたい","給料を上げたい"],\
+            ["有給が取得出来る転職","有給が取得出来る転職"],\
+            ["給料が今より高い転職","有給を取得出来る環境"],
+            ["勤務時間を安定させる転職","勤務時間を安定させる転職"],
+            ["出勤希望の叶う転職","出勤希望の叶う転職"],\
+            ["ボーナスのある転職","ボーナスのある転職"],
+            ["重労働の少ない転職","重労働の少ない転職"],
             ["その他","その他"],
            ])
       tr
         td
           strong.label 必須
         td.arrow_box
-          | 葬儀の種類
-        td
-          = f.select(:select,[\
-            ["選択してください","選択してください"],\
-            ["一般葬","一般葬"],\
-            ["家族葬","家族葬"],\
-            ["一日葬","一日葬"],\
-            ["直葬（火葬式）","直葬（火葬式）"],\
-            ["自由葬","自由葬"],\
-            ["社葬（団体葬）","社葬（団体葬）"],\
-            ["自宅葬","自宅葬"],\
-            ["生前葬","生前葬"],\
-            ["その他","その他"],\
-           ])
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
-          | 導入時期
+          | 転職希望時期
         td
           = f.select(:period,[\
              ["選択する","選択する"],\
@@ -120,7 +112,21 @@
         td
           strong.label 必須
         td.arrow_box
-          | 相談本文
+          | 転職希望エリア（※広めに記載）
+        td
+          = f.text_area :next_address
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 取得している資格
+        td
+          = f.text_area :qualificartion
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 相談内容・その他
         td
           = f.text_area :remarks
       tr
